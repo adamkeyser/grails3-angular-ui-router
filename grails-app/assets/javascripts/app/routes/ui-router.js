@@ -2,7 +2,7 @@ app.config(function($stateProvider){
   $stateProvider
     .state('home', {
       url: '/home',
-      templateUrl: 'ui-router/partials/home.html',
+      templateUrl: '/app/home.htm',
       controller: 'mainController'
     })
     .state('home.list', {
