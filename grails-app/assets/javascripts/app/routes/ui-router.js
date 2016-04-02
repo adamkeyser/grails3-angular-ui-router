@@ -2,34 +2,34 @@ app.config(function($stateProvider){
   $stateProvider
     .state('home', {
       url: '/home',
-      templateUrl: 'ui-router/partials/home.html',
+      templateUrl: '/app/home.html',
       controller: 'mainController'
     })
     .state('home.list', {
       url: '/list',
-      templateUrl: 'ui-router/partials/home.list.html',
+      templateUrl: '/app/home.list.html',
       controller: function($scope) {
         $scope.message = 'I inherited ' + $scope.attendees.length + ' attendees';
       }
     })
     .state('home.list.edit', {
       url: '/edit/:id',
-      templateUrl: 'ui-router/partials/home.list.edit.html',
+      templateUrl: '/app/home.list.edit.html',
       controller: 'attendeeController'
     })
     .state('home.list.add', {
       url: '/add',
-      templateUrl: 'ui-router/partials/home.list.add.html',
+      templateUrl: '/app/home.list.add.html',
       controller: 'attendeeController'
     })
     .state('about', {
       url: '/about',
-      templateUrl: 'ui-router/partials/about.html',
+      templateUrl: '/app/about.html',
       controller: 'aboutController'
     })
     .state('contact', {
       url: '/contact',
-      templateUrl: 'ui-router/partials/contact.html',
+      templateUrl: '/app/contact.html',
       controller: 'contactController'
     })
 });
