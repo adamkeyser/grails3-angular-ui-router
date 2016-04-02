@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "bower": "^1.7.7",
+    "chromedriver": "^2.21.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mikecalvo/grails3-angular-example"
+  },
+  "license": "MIT"
+}

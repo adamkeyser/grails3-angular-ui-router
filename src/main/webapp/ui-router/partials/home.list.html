@@ -1,0 +1,16 @@
+<div class="container text-center well">
+    {{message}}
+    <br/>
+    <table class="table">
+        <tr ng-repeat="attendee in attendees">
+            <td>{{ attendee.id }}</td>
+            <td>{{ attendee.first }}</td>
+            <td>{{ attendee.last }}</td>
+            <td><a type="button" class="btn btn-warning btn-center" ui-sref=".edit({id: attendee.id})">Edit</a></td>
+            <td><a type="button" class="btn btn-danger btn-center" ng-click="deleteAttendee(attendee.id)">Delete</a></td>
+        </tr>
+    </table>
+    <a type="button" class="btn btn-primary btn-center" ui-sref=".add">Add User</a>
+    <!-- this ui gets the home.item.edit.html or home.item.add.html -->
+    <div ui-view></div>
+</div>
