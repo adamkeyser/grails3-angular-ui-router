@@ -7,6 +7,6 @@ Before building project, be sure you have the following items installed:
 * bower
 * Firefox
 
-To build the project and run the functional tests, run:
-`./gradlew bowerInstall check`
+To build the project and run:
+`./gradlew bootRun
 
