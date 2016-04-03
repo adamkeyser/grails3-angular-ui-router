@@ -25,7 +25,7 @@ Add your templates there. When you reference them in your router code ignore bot
 templateUrl: '/app/helloStranger.html',
 ```
 
-To build the project and run:
+#To build the project and run:
 ```
 ./gradlew bootRun
 ```
