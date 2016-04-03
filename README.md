@@ -9,14 +9,14 @@ Before building project, be sure you have the following items installed:
 
 # How do I configure my project to use the asset pipeline?
 Add the following to your build gradle under the dependencies directory:
-   ```javascript
+   ```
    assets "com.craigburke.angular:angular-template-asset-pipeline:2.2.7"
    ```
 
 Create a templates directory in grails-app 
 * grails-app/assets/javascripts/app/templates
 * html files you add here should have the following format 
-```javascript 
+```
 helloStranger.tpl.html
 ```
 
@@ -26,5 +26,7 @@ templateUrl: '/app/helloStranger.html',
 ```
 
 To build the project and run:
-`./gradlew bootRun
+```
+./gradlew bootRun
+```
 
